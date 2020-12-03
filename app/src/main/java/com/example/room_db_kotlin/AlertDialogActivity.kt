@@ -30,7 +30,7 @@ class AlertDialogActivity(context: Context,
         val builder = AlertDialog.Builder(context)
         builder.setIcon(R.drawable.ic_launcher_background)
         builder.setTitle("memo_table")
-        builder.setMessage("다이어로그를 누르셨습니다. 원하는 작업을 하세요.")
+        builder.setMessage("데이터를 변경합니다.")
         builder.setView(dialogView)
                 .setPositiveButton("확인") { dialogInterface, i ->
                     lifecycleScope.launch(Dispatchers.IO) {
